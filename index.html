@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+      media="screen and (min-width:771px), print"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/media.css"
+      media="screen and (max-width:770px)"
+    />
+    <!----How to work the scss?--->
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="./css/animate.css" />
+    <script type="text/javascript" src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- animate end -->
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <!-----------------------------------------First page------------------------------------------------>
+        <div id="one" class="slide index_name">
+          <h1 class="wow fadeInUp" data-wow-delay="0.5s">Shu Tanoue</h1>
+          <p class="wow fadeInUp" data-wow-delay="1s">
+            Front End Developer<br />
+            based in Vancouver
+          </p>
+
+          <nav class="index_name_nav">
+            <ul>
+              <li class="wow fadeInUp" data-wow-delay="0.2s">
+                <a href="#two">About</a>
+              </li>
+              <li class="wow fadeInUp" data-wow-delay="0.4s">
+                <a href="#three">Project</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="index_name_right_finger02">
+            <a class="wow fadeInUp" data-wow-delay="0.7s" href="#two"
+              ><i class="fas fa-hand-point-right"></i
+            ></a>
+          </div>
+
+          <div class="index_name_img01 wow fadeInLeft" data-wow-delay="1s">
+            <img
+              src="img/index_name_img01.png"
+              alt="
+			  astronaut"
+            />
+          </div>
+        </div>
+        <!-----------------------------------------Two page------------------------------------------------>
+        <div id="two" class="slide two">
+          <!-- BG IMG start -->
+          <div class="wrapp2">
+            <img class="fadein" src="./img/index_moon_img01.png" alt="moon" />
+            <img
+              class="inthemoon wow fadeInLeft"
+              data-wow-delay="1s"
+              src="./img/index_user_img01.png"
+              alt="user"
+            />
+          </div>
+          <!-- BG IMG end -->
+          <!-- text start -->
+          <section class="name_sub_third">
+            <h1 class="wow fadeInUp dn">
+              My constantly evolving <br />
+              design and development skills
+            </h1>
+            <h2 class="main_skills wow fadeInUp dn" data-wow-delay="0.2s">
+              Main skills
+            </h2>
+
+            <!--I Should Use the ul n li as well-->
+            <ul class="main_skills_logo">
+              <li class="wow fadeInUp dn" data-wow-delay="0.3s">
+                <i class="fab fa-html5 fa-7x"></i>
+              </li>
+              <li class="wow fadeInUp dn" data-wow-delay="0.3s">
+                <i
+                  class="fab fa-css3-alt fa-7x wow fadeInUp dn"
+                  data-wow-delay="0.4s"
+                ></i>
+              </li>
+              <li class="wow fadeInUp dn" data-wow-delay="0.3s">
+                <i
+                  class="fab fa-js-square fa-7x wow fadeInUp dn"
+                  data-wow-delay="0.5s"
+                ></i>
+              </li>
+              <li class="wow fadeInUp dn" data-wow-delay="0.3s">
+                <i
+                  class="fab fa-react fa-7x wow fadeInUp dn"
+                  data-wow-delay="0.6s"
+                ></i>
+              </li>
+            </ul>
+            <!--I Should Use the ul n li as well-->
+          </section>
+          <!-- text end -->
+        </div>
+        <!-----------------------------------------Three page------------------------------------------------>
+        <div id="three" class="slide three">
+          <h1 class="section3_title wow fadeInUp dn" data-wow-delay="0.3s">
+            Project
+          </h1>
+          <div class="three-content">
+            <figure class="three-box wow fadeInUp dn" data-wow-delay="0.4s">
+              <img src="./img/index_cricket_img01.png" alt="cricket" />
+              <figcaption>
+                <h3>Cricket project</h3>
+                <h5>JQ | CSS | HTML</h5>
+              </figcaption>
+              <a href="https://github.com/shu-tanoue/Lacrosse"></a>
+            </figure>
+            <figure
+              class="three-box hover wow fadeInUp dn"
+              data-wow-delay="0.6s"
+            >
+              <img src="./img/index_lacrosse_img02.png" alt="lacrosse" />
+              <figcaption>
+                <h3>Lacrosse project</h3>
+                <h5>JQ | CSS | HTML</h5>
+              </figcaption>
+              <a href="https://github.com/shu-tanoue/Lacrosse"></a>
+            </figure>
+            <figure class="three-box wow fadeInUp dn" data-wow-delay="0.8s">
+              <img src="./img/index_react_img01.png" alt="react" />
+              <figcaption>
+                <h3>React project</h3>
+                <h5>Coming Soon</h5>
+              </figcaption>
+              <a href="#"></a>
+            </figure>
+            <div class="slide_left wow fadeInUp dn" data-wow-delay="2s">
+              <p class="text">Always updated (WIP)</p>
+            </div>
+          </div>
+        </div>
+        <!-----------------------------------------Four page------------------------------------------------>
+        <div id="four" class="slide four">
+          <h1 class="top_t wow fadeInUp dn" data-wow-delay="0.2s">
+            Contact Me!
+          </h1>
+          <div class="circle_g">
+            <div class="circle wow fadeInUp dn" data-wow-delay="0.4s">
+              <a href="https://github.com/shu-tanoue">
+                <img src="./img/index_contact_icon01.png" alt="sample87" />
+                <span>Github</span>
+              </a>
+            </div>
+            <div class="circle wow fadeInUp dn" data-wow-delay="0.5s">
+              <a href="https://www.linkedin.com/in/shuichiro-tanoue-863899198/">
+                <img src="./img/index_contact_icon02.png" alt="sample87" />
+                <span>Linkedin</span></a
+              >
+            </div>
+            <div class="circle wow fadeInUp dn" data-wow-delay="0.6s">
+              <a href="img/index_resume01.pdf">
+                <img src="./img/index_contact_icon03.png" alt="sample87" />
+                <span>Resume</span></a
+              >
+            </div>
+            <div class="circle wow fadeInUp dn" data-wow-delay="0.7s">
+              <a href="https://www.instagram.com/shu_frontend/">
+                <img src="./img/index_contact_icon04.png" alt="sample87" />
+                <span>Instagram</span></a
+              >
+            </div>
+          </div>
+          <div class="or wow fadeInUp dn" data-wow-delay="0.8s">Or</div>
+          <div class="bg-contact wow fadeInUp dn" data-wow-delay="0.9s">
+            <form
+              id="contact"
+              name="contact"
+              accept-charset="utf-8"
+              action="mail.php"
+              method="POST"
+            >
+              <a>
+                <label
+                  ><span>Name</span>
+                  <input
+                    name="name"
+                    type="text"
+                    placeholder="Name"
+                    required="required"
+                  />
+                </label>
+              </a>
+              <a>
+                <label
+                  ><span>Email</span>
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    required="required"
+                  />
+                </label>
+              </a>
+              <a>
+                <label
+                  ><span>Message</span>
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    required="required"
+                  ></textarea>
+                </label>
+              </a>
+              <a>
+                <input name="submit" type="submit" type="button" value="Send" />
+              </a>
+            </form>
+          </div>
+          <div class="contact-mailsend">Thank you</div>
+        </div>
+      </div>
+      <!-- wrapper end -->
+    </div>
+    <!-- outer-wrapper end -->
+    <!------------------------------------Cursor----------------------------------------------------------->
+    <div class="cursor"></div>
+    <div class="follower"></div>
+    <div class="icon_finger">
+      <a class="icon_finger_left" href="#one"
+        ><i class="fas fa-hand-point-left"></i
+      ></a>
+    </div>
+    <div class="icon_contact">
+      <div>
+        <a href="#four"><i class="fas fa-space-shuttle"></i>Contact</a>
+      </div>
+    </div>
+
+    <!----------------------------------- base js----------------------------------------------------------->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ofi.min.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/first.animation.js"></script>
+    <script src="./js/point.js"></script>
+    <script src="./js/hover.js"></script>
+    <script src="./js/contact-app.js"></script>
+  </body>
+</html>
