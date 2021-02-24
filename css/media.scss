@@ -491,6 +491,7 @@ button:hover {
 
 .circle {
   margin-right: 25px;
+  margin-left: 25px;
   margin-bottom: 25px;
 }
 .circle a {
@@ -563,11 +564,12 @@ button:hover {
 .email {
   display: inline-block;
   margin: 0 auto;
-  font-size: rem;
+  font-size: 1.8rem;
   color: #2455a9;
   text-decoration: none;
   position: relative;
   transition: text-shadow 0.3s ease, color 0.3s ease;
+
   &::after {
     position: absolute;
     content: "";

@@ -544,6 +544,7 @@ button:hover {
 
 .circle {
   margin-right: 25px;
+  margin-left: 25px;
   margin-bottom: 25px;
 }
 
@@ -624,7 +625,7 @@ button:hover {
 .email {
   display: inline-block;
   margin: 0 auto;
-  font-size: rem;
+  font-size: 1.8rem;
   color: #2455a9;
   text-decoration: none;
   position: relative;
