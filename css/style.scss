@@ -10,6 +10,7 @@ body {
   cursor: none !important;
   color: $color;
   box-sizing: border-box;
+  background-color: #19326c;
 }
 a {
   cursor: none !important;
@@ -126,6 +127,7 @@ label {
   font-size: 40px;
   animation: icon_contact1 0.6s ease-in 1 forwards;
   animation-delay: 0.6s;
+  z-index: 10;
   a {
     display: flex;
     color: $color;
@@ -334,13 +336,6 @@ label {
   top: 70px;
 }
 
-.text {
-  font-size: 3em;
-  color: #fff;
-  animation: flowing 10s linear infinite;
-  transform: translateX(100%); /*初期位置*/
-}
-
 @keyframes flowing {
   100% {
     transform: translateX(-100%);
@@ -358,7 +353,7 @@ label {
   overflow: hidden;
   margin: 10px;
   min-width: 230px;
-  max-width: 32%;
+  max-width: 30%;
   width: 100%;
   color: #ffffff;
   font-size: 16px;
@@ -614,7 +609,7 @@ button:hover {
 }
 
 .top_t {
-  font-size: 5vh;
+  font-size: 11vh;
   color: #fff;
   text-align: center;
   margin-bottom: 15px;
@@ -633,6 +628,37 @@ button:hover {
   text-align: center;
   color: aquamarine;
   font-size: 25px;
+}
+.email {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #2455a9;
+  text-decoration: none;
+  position: relative;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: #fff;
+    transform-origin: 0% 0%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+  }
+  &:hover {
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}
+.email-shadow {
+  color: #fff;
+  text-shadow: 2px 2px 0 #2455a9, -1px -1px 0 #2455a9, 1px -1px 0 #2455a9,
+    -1px 1px 0 #2455a9, 1px 1px 0 #2455a9;
 }
 
 /*----------------Cursor--------------------------*/

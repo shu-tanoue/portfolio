@@ -27,14 +27,16 @@ textarea {
 label {
   cursor: none !important;
 }
-/*----------------commom--------------------------*/
+/*----------------common--------------------------*/
 .slide {
   width: 100vw;
   height: 100vh;
+  position: relative;
+  z-index: 10;
 }
 
 .bg {
-  background-image: url(../img/index_sp_star_img01.png);
+  background-image: url(../img/index_sp_star_img01.jpg);
 
   background-size: cover;
   position: fixed;
@@ -48,11 +50,9 @@ label {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  z-index: 0;
 }
 
-// .dn {
-//   opacity: 0 !important;
-// }
 /*----------------Nav--------------------------*/
 
 .index_name_nav {
@@ -108,6 +108,7 @@ label {
   font-size: 40px;
   animation: icon_contact1 0.6s ease-in 1 forwards;
   animation-delay: 0.6s;
+  z-index: 10;
   a {
     display: flex;
     color: $color;
@@ -136,35 +137,26 @@ label {
     margin-right: 10px;
   }
 }
-
-@keyframes icon_contact1 {
-  0% {
-    top: calc(5vh + 30px);
-    opacity: 0;
-  }
-  100% {
-    top: 5vh;
-    opacity: 1;
-  }
-}
-
-@keyframes icon_contact1 {
-  0% {
-    top: calc(5vh + 30px);
-    opacity: 0;
-  }
-  100% {
-    top: 5vh;
-    opacity: 1;
-  }
-}
-
-@keyframes rotation1 {
+@keyframes rotation4 {
   0% {
     color: #fff;
   }
   100% {
     color: yellow;
+  }
+}
+i {
+  margin-right: 10px;
+}
+
+@keyframes icon_contact1 {
+  0% {
+    top: calc(5vh + 30px);
+    opacity: 0;
+  }
+  100% {
+    top: 5vh;
+    opacity: 1;
   }
 }
 .icon_finger {
@@ -273,9 +265,9 @@ label {
   text-align: center;
   display: block;
   position: relative;
-
   margin-bottom: 10vw;
 }
+
 .slide_left {
   // background: rgba(255, 255, 255, 0.2);
   width: 60%;
@@ -284,13 +276,6 @@ label {
   margin: 0 auto;
   position: relative;
   top: 70px;
-}
-
-.text {
-  font-size: 3em;
-  color: #fff;
-  animation: flowing 10s linear infinite;
-  transform: translateX(100%); /*初期位置*/
 }
 
 @keyframes flowing {
@@ -329,7 +314,6 @@ label {
   right: 10px;
   top: 100%;
   content: "";
-  // background-color: rgba(0, 0, 128, 0.9);
   background-color: rgba(51, 51, 51, 0.9);
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -428,6 +412,7 @@ figcaption:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .bg-contact {
@@ -555,7 +540,7 @@ button:hover {
 }
 
 .top_t {
-  font-size: 5vh;
+  font-size: 8vh;
   color: #fff;
   text-align: center;
   margin-bottom: 40px;
@@ -575,13 +560,39 @@ button:hover {
   color: aquamarine;
   font-size: 25px;
 }
-
-/*------------------------------------media 738px-------------------------------------------------*/
-@media screen and (max-width: 738px) {
-  .text {
-    font-size: 2em;
+.email {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: rem;
+  color: #2455a9;
+  text-decoration: none;
+  position: relative;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: #fff;
+    transform-origin: 0% 0%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+  }
+  &:hover {
+    &::after {
+      transform: scaleX(1);
+    }
   }
 }
+.email-shadow {
+  color: #fff;
+  text-shadow: 2px 2px 0 #2455a9, -1px -1px 0 #2455a9, 1px -1px 0 #2455a9,
+    -1px 1px 0 #2455a9, 1px 1px 0 #2455a9;
+}
+
+/*------------------------------------media 738px-------------------------------------------------*/
 
 @media screen and (max-width: 656px) {
   .bg-contact {
@@ -642,9 +653,7 @@ button:hover {
     height: 50px;
     width: 50px;
   }
-  .text {
-    font-size: 1.5em;
-  }
+
   .three-box img {
     width: 100%;
     height: 30vw;
@@ -668,9 +677,6 @@ button:hover {
   }
 }
 @media screen and (max-width: 369px) {
-  .text {
-    font-size: 1.2em;
-  }
   .index_name_nav li a {
     font-size: 2.3vh;
   }
@@ -687,7 +693,7 @@ button:hover {
     font-size: 6vh;
   }
   .top_t {
-    font-size: 4vh;
+    font-size: 6vh;
   }
 }
 @media screen and (max-width: 320px) {
